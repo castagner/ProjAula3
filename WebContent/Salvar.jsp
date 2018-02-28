@@ -11,7 +11,7 @@
 <body>
 	<%
 		int id = Integer.parseInt(request.getParameter("id"));
-		String descricao = request.getParameter("Parametro");
+		String descricao = request.getParameter("descricao");
 		int ano = Integer.parseInt(request.getParameter("ano"));
 
 		Moto moto = new Moto();
