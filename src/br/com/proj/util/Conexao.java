@@ -1,4 +1,4 @@
-package br.proj.util;
+package br.com.proj.util;
 
 import java.sql.DriverManager;
 import java.sql.Connection;
@@ -12,8 +12,7 @@ public class Conexao {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = null;
 			con = (Connection)
-					DriverManager.getConnection("jdb:mysql://localhost/cadastro",
-							"root", "1234");
+					DriverManager.getConnection("jdbc:mysql://localhost/dbmoto","root", "logatti");
 			return con;
 		}catch(SQLException e) {
 			throw new RuntimeException(e);
